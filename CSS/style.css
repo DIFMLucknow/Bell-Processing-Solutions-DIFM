@@ -1,0 +1,228 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: white;
+  background-color: white;
+}
+select option{
+  color: whitesmoke;
+  font-size: medium;
+}
+select{
+  overflow-y: scroll;
+}
+/* -------------------------------------------Comman CSS of text---------------------------------------------- */
+.fw-600{
+  font-weight: 600;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-400{
+  font-weight: 400;
+}
+.h-15rem{
+  height: 15rem;
+}
+.bg-color-light{
+  background-color: #f7f7f7;
+}
+.Visit-btn-color{
+  background-color: #b42025 !important;
+  color: whitesmoke !important;
+  
+}
+.Visit-btn-color:hover{
+  background-color: whitesmoke !important;
+  color: #b42025 !important;
+
+}
+.rounded-5{
+  border-radius: 5rem;
+}
+.z-index-10{
+  z-index: 10 !important;
+}
+.z-index-9{
+  z-index: 9;
+}
+.text-justify{
+  text-align: justify !important;
+  text-justify: inter-word;
+}
+.box-shadow1{
+  box-shadow: inset 0 0 0 2000px rgba(0 0 0 / 57%);
+}
+.img-after-nav{
+  display: none;
+}
+.img-after-nav-lg{
+  display: block;
+}
+/* -------------------------------------------Comman CSS of text End---------------------------------------------- */
+
+/* -------------------------------------------------Images After navbar in Each page---------------------------------------- */
+
+/*filter Linked in Carousel of All Pages */
+.filter{
+  filter: brightness(0.4);
+}
+/* -------------------------------------------------Images After navbar in Each page end---------------------------------------- */
+
+/* -------------------------------------------NAVBAR STYLING STARTED----------------------------------------------------*/
+nav.navbar {
+  background-color: rgba(255, 255, 255, 0.458);
+  color: #000;
+}
+ul {
+  margin: 0 40px 0 0;
+}
+li.nav-item {
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
+}
+li.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  margin: 2px 10px 2px 10px;
+  border-radius: 5px;
+}
+.carousel-center{
+  font-size: medium;
+}
+#logo {
+	height: 100px;
+	width: 194px;
+	background: url("../Image/logo.png") 0 0 no-repeat;
+	margin-left: 10px;
+	cursor: pointer;
+}
+#bell {
+	height: 41px;
+	width: 50px;
+	background: url("../Image/bell.png") 0 0 no-repeat;
+	position: absolute;
+	top: 20px;
+	left: 71px;
+	transform-origin: center 13px;
+	animation: bell 1s ease-in-out infinite alternate;
+}
+@keyframes bell {
+	0% { transform: rotate(-30deg) }
+	100% { transform: rotate(30deg) }
+}
+/* ---------------------------------Media Query-------------------------------- */
+@media screen and (max-width: 420px){
+  .carousel-center h1{
+    font-size: small;
+    width: 100% !important;
+  }
+  .carousel-credit h1{
+    font-size: x-large;
+    width: 100% !important;
+  }
+  .img-after-nav{
+    display: block;
+  }
+  .img-after-nav-lg{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 420px){
+  .carousel-center h1{
+    font-size: medium;
+    width: 100% !important;
+  }
+  .carousel-credit h1{
+    font-size: xx-large;
+    width: 100% !important;
+  }
+  .img-after-nav{
+    display: block;
+  }
+  .img-after-nav-lg{
+    display: none !important;
+  }
+}
+
+/* -------------------------------------------NAVBAR STYLING ENDED----------------------------------------------------*/
+
+/*---------------------------------------------- OUR SERVICES PART STARTED ------------------------------------------------------*/
+.cards{
+  transition: transform 0.2s ease-in-out;
+}
+.cards:hover{
+  transform: translate(-10px,-10px);
+}
+/*---------------------------------------------------------------OUR SERVICES PART ENDED ----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------OUR CLIENTS PART STARTED ----------------------------------------------------------------------*/
+
+/* Custom styles for the "Our Clients" section */
+#our-clients {
+  background-color: #f7f7f7;
+}
+
+.client-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.client-logo img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.client-logo:hover {
+  transform: translateY(-5px);
+}
+
+/*---------------------------------------------------------------OUR CLIENTS PART ENDED ----------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------- Merchant Cash PAGE STARTED------------------------------------------------------------ */
+
+div.merchantform {
+  background-size: cover;
+}
+
+/* ----------------------------------------------------- Merchant Cash PAGE ENDED------------------------------------------------------------ */
+
+/* ----------------------------------------------------- PCI FAQS PAGE STARTED------------------------------------------------------------ */
+
+.bg-color-faq{
+  background-color: seashell;
+}
+.rotate-90{
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(45deg);
+}
+
+/* Faqs Section Ended */
+
+/* ----------------------------------------------------- PCI FAQS PAGE ENDED------------------------------------------------------------ */
+
+/* -----------------------------------------------------APPLY NOW PAGE STARTED------------------------------------------------------------ */
+select option{
+  background-color: #333;
+}
+input.apn,
+select.apn {
+  color: whitesmoke;
+  background-color: transparent;
+}
+.callcard {
+  transition: transform 0.2s ease-in-out;
+}
+.callcard:hover {
+  transform: translate(-10px, -10px);
+}
+/* -----------------------------------------------------APPLY NOW PAGE ENDED------------------------------------------------------------ */
